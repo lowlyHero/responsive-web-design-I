@@ -173,9 +173,9 @@ nav a {
 }
 
 .logo {
-    height: 50px;
-    margin-left: 15px;
-    margin-top: 5px;
+    position: relative;
+    height: 35px;
+    width: 150px;
 }
 
 .marketing-header {
@@ -212,6 +212,10 @@ p {
     border-top: 1px solid black;
 }
 
+.top-container section {
+    padding-left: 7px
+}
+
 .middle-img {
     width: 800px;
 }
@@ -229,20 +233,33 @@ p {
     text-align: center;
 }
 
-@media(max-width: 768px) {
+
+@media(max-width: 800px) {
     .container {
         margin: 0 auto;
-        width: 600px;
+        width: 720px;
     }
 
     .logo {
         display: block;
+        height: auto;
         position: absolute;
-        left: 15em;
+        left: 255px;
+        width: 200px;
     }
 
     a {
-        margin-top: 3.5em;
+        justify-content: center;
+        margin-top: 3.6em;
+        margin-left: 12.5px;
+    }
+
+    .top-container .features {
+        margin-right: 12px;
+    }
+
+    .bottom-container p {
+        margin-right: 30px;
     }
 
     .header-img {
@@ -250,6 +267,42 @@ p {
     }
 
     .middle-img {
-        width: 600px;
+        width: 800px;
+    }
+}
+
+@media(max-width: 525px) {
+
+    .container {
+        margin: 0 auto;
+        padding: 0 10px 0 10px;
+        width: 500px;
+    }
+
+    header nav {
+        flex-direction: column;
+        width: 500px;
+    }
+
+    header nav a {
+        border-bottom: 1px solid gray;
+        margin: 0 auto;
+        text-align: center;
+        width: 500px;
+    }
+
+    img.logo {
+        border-bottom: 1px solid gray;
+        position: relative;
+        
+}
+
+    .middle-img {
+        width: 460px;
+    }
+
+    .top-container,
+    .bottom-container {
+        flex-direction: column;
     }
 }
