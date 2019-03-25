@@ -228,3 +228,28 @@ p {
     padding-bottom: 75px;
     text-align: center;
 }
+
+@media(max-width: 768px) {
+    .container {
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    .logo {
+        display: block;
+        position: absolute;
+        left: 15em;
+    }
+
+    a {
+        margin-top: 3.5em;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .middle-img {
+        width: 600px;
+    }
+}
